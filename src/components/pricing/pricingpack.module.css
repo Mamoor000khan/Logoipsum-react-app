@@ -46,18 +46,12 @@
     /* font-Weight: 400px; */
     line-Height: 30px;
 }
-.list {
+/* .list {
     width: max-content;
     padding: 0;
     margin: auto;
     margin-Top: 30px;
-    /* '& > *': { */
-        padding: 0;
-        margin-Bottom: 10px;
-    /* }, */
-    /* '& > :last-child': {
-        margin: 0
-    } */
+  
 }
 
 .listItemIcon {
@@ -106,4 +100,4 @@
         background-Color: #F53838;
         box-Shadow: none;
         backface-Visibility: hidden;
-    }
+    } */
