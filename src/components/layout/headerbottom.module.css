@@ -1,0 +1,10 @@
+
+.headerBottomItem {
+    height: 438px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 117px;
+}
+

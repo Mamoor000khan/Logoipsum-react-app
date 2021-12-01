@@ -1,0 +1,88 @@
+.features {
+    margin-top: 40px;
+    margin-bottom: 250px;
+    box-sizing: content-box;
+    box-shadow: 0 30px 30px rgba(0,0,0,.02);
+    background-color: #fafafa;
+}
+
+.container {
+    max-width: 1105.48px;
+    max-height: 441.17px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: auto;
+}
+
+.img{
+    width: 348px ;
+    margin-left: 53px;
+    margin-bottom: 0px;
+   
+}
+
+.heading {
+    /* width: 383.41px; */
+    height: 100px;
+    font-weight: 500px;
+    font-Size: 350px;
+    line-Height: 50px;
+    margin-Bottom: 20px;
+    font-Size: 35px;
+    font-Weight: 500px;
+    line-Height: 50px;
+    color: #0B132A;
+}
+
+.textContainer {
+    width: 511.88px;
+    height: 340px;
+    text-align: start;
+    margin-left: 168px;
+}
+
+.text {
+    width: 427.88px;
+    /* margin-top: -34px;
+    line-Height: 31px; */
+    text-Transform: none;
+    color: #4F5665;
+    /* font-size: 18px; */
+}
+
+.list {
+    height: 173px;
+    padding: 0;
+    font-size: 15px;
+    margin-top: 26px;
+    color: #5454D4
+}
+
+.list :hover{
+    color: #F53838;
+}
+
+    /* .listItem {
+        height: 30px;
+        margin-Bottom: 15px;
+    }
+    .listItemText {
+        color: #4F5665;
+        font-Size: normal;
+        font-Size: 14px;
+        line-Height: 30px;
+        margin-left: 45px;
+        margin-top: -38px;
+        margin-bottom: 23px;
+    }
+    
+    .iconContainer {
+        width: 24px;
+        height: 24px;
+        min-Width: max-content;
+        margin-Right: 10.8px;
+         color: #2FAB73 
+    } 
+    */

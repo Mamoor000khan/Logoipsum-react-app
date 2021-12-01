@@ -1,0 +1,109 @@
+.packPlanContainer {
+    max-height: 760px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    /* margin-right: 20px; */
+    margin-left: 100px;
+}
+
+.packItem {
+    width: 330px;
+    height: 760px;
+    border-radius: 10px;
+    margin-right: 50px;
+    /* border: 2px solid #DDDDDD; */
+    position: relative;
+    transition: all .3s;
+    box-sizing: border-box;
+}
+
+
+.packItem:hover {
+   background-color: #FF7143;  
+    box-shadow: #FF7143;
+    color: #FFF; 
+}
+.listItemText {
+    margin: 0;
+    /* '& > *': { */
+        font-Size: 14px;
+        font-Weight: 400px;
+        line-Height: 38px;
+        color: #696871;
+        margin-top: 12px;
+        text-align: center;
+    }
+
+
+.label {
+    font-Size: 18px;
+    font-Weight: 500px;
+    margin: auto;
+    font-Size: 20px;
+    margin-left: 100px;
+    /* font-Weight: 400px; */
+    line-Height: 30px;
+}
+.list {
+    width: max-content;
+    padding: 0;
+    margin: auto;
+    margin-Top: 30px;
+    /* '& > *': { */
+        padding: 0;
+        margin-Bottom: 10px;
+    /* }, */
+    /* '& > :last-child': {
+        margin: 0
+    } */
+}
+
+.listItemIcon {
+    min-Width: max-content;
+    margin-Right: 20px;
+    margin-left: -24px;
+    margin-bottom: -8px;
+}
+
+
+
+.price {
+    font-Weight: 500px;
+    position: absolute;
+    top: 615px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-Size: 25px;
+    font-Weight: 700px;
+    line-Height: 30px;
+}
+.time {
+    text-Transform: lowercase;
+    font-Weight: 400px;
+    color: #4F5665;
+}
+.btn {
+    width: 177.88px;
+    font-size: 20px;
+    height: 45px;
+    color: #f53838;
+    border-Radius: 50px;
+    border: 2px solid #F53838;
+    position: absolute;
+    top: 665px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .2s;
+    box-Shadow: none;
+
+}
+.btn:hover {
+    width: 200px;
+    font-size: 25px;
+        color: #fff;
+        background-Color: #F53838;
+        box-Shadow: none;
+        backface-Visibility: hidden;
+    }
