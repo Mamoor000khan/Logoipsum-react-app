@@ -36,15 +36,18 @@
         text-align: center;
     }
 
+  
+
 
 .label {
-    font-Size: 18px;
+    
     font-Weight: 500px;
     margin: auto;
-    font-Size: 20px;
+    font-Size: 50px;
     margin-left: 100px;
     /* font-Weight: 400px; */
     line-Height: 30px;
+    margin-left: 128px;
 }
 /* .list {
     width: max-content;
