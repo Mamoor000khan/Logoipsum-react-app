@@ -30,11 +30,11 @@ function PricingPack() {
              </div>
 
              <div className={classes.packItem}>
-                 <p className={classes.listItemText}>starter</p>
+                 <p className={classes.label}>starter</p>
                  <p className={classes.label}>Free</p>
-                 <p className={classes.listItemText}>1 Website</p>
-                 <p className={classes.listItemText}>5 Gb Hosting</p>
-                 <p className={classes.listItemText}>Limited Support</p>
+                 <p className={classes.label}>1 Website</p>
+                 <p className={classes.label}>5 Gb Hosting</p>
+                 <p className={classes.label}>Limited Support</p>
              </div>
              <div>
                  <button></button>
