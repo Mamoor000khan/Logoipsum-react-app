@@ -36,14 +36,14 @@
         color: #696871;
         margin-Right: 53px;
         left: 5%;
-        line-Height: 18px;
+        /* line-Height: 18px; */
         top: 3%;
         /* position: fixed; */
     }
     
 .link:hover { 
-            text-Decoration: none;
-            font-weight: 50%;
+            /* text-Decoration: none; */
+            /* font-weight: 50%; */
             border-Bottom: 2px solid #5454D4;
             color: black;
             font-size: 20px;
@@ -61,6 +61,10 @@
     border-Bottom: 2px solid #5454D4;
     font-size: 20px;
     }
+
+ .active:hover{
+     line-height: 30px;
+ }   
 
 .navLinks {
     margin-left: 17px;
