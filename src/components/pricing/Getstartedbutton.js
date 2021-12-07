@@ -18,8 +18,8 @@ const useStyles = makeStyles({
         backfaceVisibility: 'hidden',
         boxShadow: 'none',
         // position: 'fixed',
-        marginLeft: '68px',
-        marginTop: '30px',
+        marginLeft: '0px',
+        marginTop: '3px',
         
 
         '&:hover': {

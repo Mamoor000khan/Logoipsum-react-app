@@ -1,16 +1,17 @@
 import React from 'react';
-import Headerbottom from './headerbottom';
-import Headertop from './headertop';
+import Headerbottom from './headerBottom';
+import Headertop from './headerTop';
 
-import Navbar from './navbar';
+import Navbar from '../Nav/navbar';
 
 
 function header () {
     return (
-        <div>
+        <div style={{backgroundColor:'#F2F2F2'}}>
           <Navbar/>
           <Headertop/>
           <Headerbottom/>
+          
         </div>
     )
 }

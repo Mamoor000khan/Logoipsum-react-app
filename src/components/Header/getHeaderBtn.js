@@ -5,11 +5,11 @@ import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles({
     btn: {
-        width: '191.83px',
-        height: '55px',
+        width: '211px',
+        height: '60px',
         color: '#fff',
-        background: '#FF7143',
-        fontSize: '12px',
+        background: '#5454D4',
+        fontSize: '15px',
         // fontWeight: '211x',
         lineHeight: '25px',
         borderRadius: '10px',
@@ -18,17 +18,18 @@ const useStyles = makeStyles({
         backfaceVisibility: 'hidden',
         boxShadow: 'none',
         // position: 'fixed',
-        marginLeft: '88px',
+        // marginLeft: '55px',
+        marginTop: '36px',
         
 
         '&:hover': {
-            backgroundColor: '#5454D4',
+            backgroundColor: '#FF7143',
             boxShadow: 'black'
         }
     }
 })
 
-function GetStartedBtn () {
+function GetHeaderBtn () {
     const classes = useStyles();
     return (
         <Button variant="contained" className={classes.btn}>
@@ -38,5 +39,4 @@ function GetStartedBtn () {
 }
 
 
-
-export default GetStartedBtn;
+export default GetHeaderBtn;

@@ -1,21 +1,21 @@
 import React from 'react';
 
 
-import Header from './components/layout/header';
+import Header from './components/Header/header.js';
 import Features from '../src/components/features/features';
 import Package from './components/package/package';
-import Content from './components/pricing/pricing';
+import Pricing from './components/pricing/pricing';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor:'#F2F2F2'}}>
       <Header />
 
       <Features />
 
       <Package />
 
-      <Content/>
+      <Pricing/>
 
     </div>
   );
