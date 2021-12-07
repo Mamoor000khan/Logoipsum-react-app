@@ -26,9 +26,7 @@ const useStyles = makeStyles((theme) => ({
             borderRadius: '15px 15px 15px 15px',
         },
      },
-    }
-   )
-  );
+    }));
 
 function PricingPack() {
   const classes = useStyles();
