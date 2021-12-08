@@ -26,8 +26,10 @@ const useStyles = makeStyles((theme) => ({
     /* margin-bottom: 500px; */
  },
  btn: {
-       '&:hover':{
+    '&:hover':{
          backgroundColor:'#5454D4',
+        //  width:'200px',
+        //  height:'50px'
       },
      },
   }
@@ -41,13 +43,13 @@ function Pricing () {
         <div className={classes.container} > 
           <p className={classes.heading}><b>Get the right plan for future product.</b></p>
          
-      <div style={{marginLeft:'415px', marginTop:'83px', }}>   
+      <div style={{ marginLeft:'415px', marginTop:'83px', }}>   
         <Grid>
-          <Button className={classes.btn} style={{ borderRadius: '15px 0px 0px 15px',  }} >
+          <Button className={classes.btn} style={{ borderRadius: '10px 0px 0px 10px', marginRight: '80px'  }} >
             Yearly
           </Button>
        
-          <Button className={classes.btn} style={{ borderRadius: '0px 15px 15px 0px', }}>
+          <Button className={classes.btn} style={{ borderRadius: '0px 10px 10px 0px', }}>
             monthly
           </Button>
         </Grid>

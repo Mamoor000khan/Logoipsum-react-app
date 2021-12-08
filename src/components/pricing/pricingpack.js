@@ -7,11 +7,11 @@ const useStyles = makeStyles((theme) => ({
   packContainer:{
         display:'flex',
         justifyContent:'spaceBetween',
-        textAlign:'centre',
+        // textAlign:'centre',
     },
   packItem: {
         width:'330px',
-        textAlign:'centre',
+         textAlign:'centre',
         height:'441px',
         // borderRadius:'10px',
         marginLeft:'90px',
@@ -33,6 +33,7 @@ function PricingPack() {
     return(
       <div className={classes.packContainer}>
         <div className={classes.packItem}>
+          
           {/* STARTER PACK */}
           <p>starter</p>
           <p>
