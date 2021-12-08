@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
-import GetStartedBtn from './getStartedButton';
+import StartedBtn from './startedBtn';
 
 const useStyles = makeStyles((theme) => ({
   packContainer:{
@@ -41,7 +41,7 @@ function PricingPack() {
           <p>1 Website</p>
           <p>5 Gb Hosting</p>
           <p>Limited Support</p>
-            <GetStartedBtn/>
+            <StartedBtn/>
          </div>
         
         {/* PREMIUM PACK */}
@@ -52,7 +52,7 @@ function PricingPack() {
           <p>10 Website</p>
           <p>15 Gb Hosting</p>
           <p>premium Support</p>
-              <GetStartedBtn/>
+              <StartedBtn/>
         </div>
            
            {/* ENTERPRICE */}
@@ -63,7 +63,7 @@ function PricingPack() {
            <p>unlimited Website</p>
            <p>50 Gb Hosting</p>
            <p>premium Support</p>
-            <GetStartedBtn/>
+            <StartedBtn/>
             </div>
              
        </div>

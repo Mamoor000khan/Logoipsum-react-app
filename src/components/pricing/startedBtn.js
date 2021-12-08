@@ -30,7 +30,7 @@ const useStyles = makeStyles({
     }
 })
 
-function GetStartedBtn () {
+function StartedBtn () {
     const classes = useStyles();
     return (
         <Button variant="contained" className={classes.btn}>
@@ -41,4 +41,4 @@ function GetStartedBtn () {
 
 
 
-export default GetStartedBtn;
+export default StartedBtn;
