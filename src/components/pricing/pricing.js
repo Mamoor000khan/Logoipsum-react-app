@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 
-import PricingPack from './pricingPack';
+import PricingPack from './pricingpack';
 
 const useStyles = makeStyles((theme) => ({
  container: {

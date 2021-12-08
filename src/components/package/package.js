@@ -3,7 +3,7 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Img from '../../assets/img/package.png';
-import PackagePlans from './packagePlans';
+import PackagePlans from './packageplans';
 
 
 export default function Package() {
