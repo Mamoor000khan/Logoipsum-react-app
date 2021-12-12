@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function HeaderBottom() {
+export default function HeaderBottom(props) {
   const classes = useStyles();
 
   function FormRow() {
