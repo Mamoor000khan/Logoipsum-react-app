@@ -12,10 +12,10 @@ function App() {
     <div className="App" style={{backgroundColor:'#F2F2F2'}}>
       <Header />
 
-      <Features />
+       <Features /> 
 
-      <Package />
-
+     <Package />
+ 
       <Pricing/>
 
     </div>

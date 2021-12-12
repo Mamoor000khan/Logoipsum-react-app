@@ -1,56 +1,64 @@
 import React,{useState} from 'react';
 
 import Typography from '@material-ui/core/Typography';
-import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
+
 import GetHeaderBtn from './getHeaderBtn.js';
+
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import Img from '../../assets/img/header.png';
+import { Container } from '@material-ui/core';
 
 
 export default function HeaderTop() {
   
+  // Arrow down Function
   const [showScroll, setShowScroll] = useState(false)
 
   const checkScrollTop = () => {
-    if (!showScroll && window.pageYOffset > 200){
+    if (!showScroll && window.pageYOffset > 100){
       setShowScroll(true)
-    } else if (showScroll && window.pageYOffset <= 200){
+    } else if (showScroll && window.pageYOffset <= 100){
       setShowScroll(false)
     }
   };
 
   const scrollEnd = () =>{
-    window.scrollTo({top: document.body.offsetHeight, behavior: 'smooth'});
+    window.scrollTo({top: document.body.offsetHeight, behavior: 'smooth', });
   };
 
   window.addEventListener('scroll', checkScrollTop)
 
-
   return (
-    <React.Fragment>
-      <Container style={{width:'1151px', height:'636px', marginLeft:'65px'}}>
-      
-             <Typography style={{width:'462px', height: '231px'}} >
+    <Container style={{width:'1151px', height:'363px'}}>
+      <Grid>
+         <Typography style={{width:'462px', height: '231px'}} >
                  <b style={{fontSize:'78px', lineHeight:'77px'}}>Grow your subscription business</b>
-             </Typography>
-
-             <Typography style={{width:'459px', height: '90px'}}>
+         </Typography>
+          
+         <Typography style={{width:'459px', height: '90px'}}>
                  <p style={{fontSize:'20px', marginTop:'30px', color:'#696871'}}>Outcome-centered product that reduce churm optimize pricing and grow your subscription business end-to-end.</p>
-             </Typography>
-
+          </Typography>
+            
+        <Grid>
           <GetHeaderBtn/>
-                
-              <div style={{marginLeft:'257px', marginTop:'-49px'}}>
-                <ArrowDownwardIcon onClick={scrollEnd} style={{fontSize:'40px', 
+        </Grid>
+        
+        <Grid>   
+            <div style={{marginLeft:'257px', marginTop:'-49px'}}>
+            <ArrowDownwardIcon onClick={scrollEnd} style={{fontSize:'40px', 
                                     display: showScroll ? 'flex' : 'none'}}/> 
-              </div>
-              
-            <div style={{width:'385', height:'636px', marginLeft: '517px', 
+            </div>
+         </Grid>
+        
+         <Grid>
+            <div style={{width:'617', height:'636px', marginLeft: '530px', 
                          marginTop: '-504px'}}>
                 <img src={Img} alt="" style={{width:'610px'}}/>
             </div>  
-      </Container>
-    </React.Fragment>
+            </Grid>
+      </Grid>
+    </Container>
   );
 };
 

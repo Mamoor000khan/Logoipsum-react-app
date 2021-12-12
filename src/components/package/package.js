@@ -3,14 +3,14 @@ import React from 'react';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Img from '../../assets/img/package.png';
-import PackagePlans from './packageplans';
+ import PackagePlans from './packageplans';
 
 
 export default function Package() {
   return (
     <React.Fragment>
       <Container style={{width:'1151px', height:'636px', marginTop:'100px', 
-                         marginLeft:'115px'}}>
+                         }}>
             
             <div>
                <Typography style={{width:'556px', height:'57px', marginBottom:'38px'}}>
