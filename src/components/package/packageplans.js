@@ -12,7 +12,7 @@ import Cam from '../../assets/img/cam.png';
 const useStyles = makeStyles((theme) => ({
   img: {
     width: '151px',
-    marginLeft:'30px',
+    marginLeft:'79px',
        },
       }
      )
@@ -27,11 +27,11 @@ export default function PackgagePlans() {
           <Grid item xs={4} style={{marginTop:'125px'}} >
               <img alt='' src={Card} className={classes.img}/>
             <Typography>
-              <b style={{marginLeft:'30px',fontSize:'25px'}}  
+              <b style={{marginLeft:'79px',fontSize:'25px'}}  
                  >Benchmarks
               </b>
             </Typography>    
-            <Typography style={{width:'288px', fontSize:'15px', marginLeft:'-17px',  
+            <Typography style={{width:'288px', fontSize:'15px', marginLeft:'17px',  
                                color:'#696871', marginTop:'13px', lineHeight:'26px'}}>
                 See how you stack up against comporable compnies in similar stages
             </Typography>
@@ -40,11 +40,11 @@ export default function PackgagePlans() {
           <Grid item xs={4} style={{marginTop:'125px'}}>
               <img alt='' src={Calc} className={classes.img}/>
             <Typography>
-               <b style={{marginLeft:'32px',fontSize:'25px'}}  
+               <b style={{marginLeft:'79px',fontSize:'25px'}}  
                   >Pricing Audit
                </b>
             </Typography>
-            <Typography style={{width:'307px', fontSize:'15px', marginLeft:'-17px',  
+            <Typography style={{width:'307px', fontSize:'15px', marginLeft:'17px',  
                                color:'#696871', marginTop:'13px', lineHeight:'26px'}}>
                  Benchmark the health of your monetization and pricing strategy.
             </Typography>
@@ -53,11 +53,11 @@ export default function PackgagePlans() {
            <Grid item xs={4} style={{marginTop:'125px'}}>
                 <img alt='' src={Cam} className={classes.img}/>
               <Typography>
-                 <b style={{marginLeft:'3px',fontSize:'25px'}}  
+                 <b style={{marginLeft:'60px',fontSize:'25px'}}  
                    >Retention Audit
                   </b>
               </Typography>        
-              <Typography style={{width:'288px', fontSize:'15px', marginLeft:'-31px',  
+              <Typography style={{width:'288px', fontSize:'15px', marginLeft:'18px',  
                                color:'#696871', marginTop:'13px', lineHeight:'26px'}}>
                   Audit where revenue leakage exists and where you can increase 
                   retention.
