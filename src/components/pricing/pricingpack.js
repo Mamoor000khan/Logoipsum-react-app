@@ -9,24 +9,25 @@ import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
-    
+    width:'1211px',
   },
 
   packItem: {
             width:'330px',
-             textAlign:'centre',
+            display: 'grid',
+            justifyContent:'center',
             height:'441px',
             // borderRadius:'10px',
-            marginLeft:'100px',
-            lineHight:'45px',
+            // marginLeft:'100px',
+            fontSize:'13px',
+            // lineHight:'45px',
             color:'#696871',
             color:'#1D293F',
             
         '&:hover':{
                 backgroundColor:'#FF7143',
                 color:'#fff',
-                height:'380px',
+                // height:'380px',
                 borderRadius: '15px 15px 15px 15px',
             },
          },
@@ -35,37 +36,58 @@ const useStyles = makeStyles((theme) => ({
     height: 441,
     width: 330,
   },
-  control: {
-    padding: theme.spacing(2),
-  },
+  
 }));
 
 export default function SpacingGrid() {
-  // const [spacing, setSpacing] = React.useState(2);
+ 
    const classes = useStyles();
 
-  // const handleChange = (event) => {
-  //   setSpacing(Number(event.target.value));
-  // };
+ 
 
   return (
     <Grid container className={classes.root} spacing={2}>
       <Grid item xs={12} md={12}>
-        <Grid container >
+        <Grid container style={{display:'flex', justifyContent:'space-around'}}>
           
-            <Grid  item >
-              <Typography className={classes.packItem} style={{marginLeft:'700px'}}>
-                     <p>starter</p>
-                         <p>
-                           <b style={{fontSize:'55px'}}>Free</b></p>
-                         <p>1 Website</p>
-                         <p>5 Gb Hosting</p>
-                         <p>Limited Support</p>
-                           <StartedBtn/>
+            
+              <Grid className={classes.packItem} >
+                  <Grid ><p style={{marginTop:'44px'}}>starter</p></Grid>
+                  <Grid><b style={{fontSize:'38px'}}><p>Free</p></b></Grid>
+                   <Grid>     <p>1 Website</p></Grid>
+                   <Grid>  <p>5 Gb Hosting</p></Grid>
+                   <Grid> <p>Limited Support</p></Grid>
+                   <Grid>  <StartedBtn/></Grid>
+              </Grid>
+              
+                             
+            
+              <Grid className={classes.packItem} >
+                  <Grid ><Paper><p style={{marginTop:'44px'}}>starter</p></Paper></Grid>
+                  <Grid><Paper><b style={{fontSize:'38px'}}><p>Free</p></b></Paper></Grid>
+                   <Grid>   <Paper>   <p>1 Website</p></Paper></Grid>
+                   <Grid><Paper>  <p>5 Gb Hosting</p></Paper></Grid>
+                   <Grid> <Paper><p>Limited Support</p></Paper></Grid>
+                   <Grid> <Paper> <StartedBtn/></Paper></Grid>
+              </Grid>
+             
+
+            <Grid><Paper>
+              <Typography className={classes.packItem} >
+                  <Grid ><Paper><p>starter</p></Paper></Grid>
+                  <Grid><Paper><b style={{fontSize:'38px'}}><p>Free</p></b></Paper></Grid>
+                   <Grid>   <Paper>   <p>1 Website</p></Paper></Grid>
+                   <Grid><Paper>  <p>5 Gb Hosting</p></Paper></Grid>
+                   <Grid> <Paper><p>Limited Support</p></Paper></Grid>
+                   <Grid> <Paper> <StartedBtn/></Paper></Grid>
               </Typography>
+              </Paper>
             </Grid>
 
-            <Grid  item style={{textAlign:'centre'}}>
+
+
+
+            {/* <Grid  item style={{textAlign:'centre'}}>
              <Typography className={classes.packItem}>
              <p>Premium</p>
            <p>
@@ -87,7 +109,7 @@ export default function SpacingGrid() {
             <p>premium Support</p>
              <StartedBtn/>
             </Typography>
-            </Grid>
+            </Grid> */}
           
         </Grid>
       </Grid>
