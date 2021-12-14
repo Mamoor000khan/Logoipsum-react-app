@@ -5,8 +5,8 @@ import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles({
     btn: {
-        width: '191.83px',
-        height: '55px',
+        width: '211.83px',
+        height: '45px',
         color: '#5454D4',
         background: 'transparent',
         fontSize: '12px',
