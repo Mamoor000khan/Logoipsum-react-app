@@ -48,7 +48,7 @@ export default function SpacingGrid() {
   return (
     <Grid container className={classes.root} spacing={2}>
       <Grid item xs={12} md={12}>
-        <Grid container style={{display:'flex', justifyContent:'space-around'}}>
+        <Grid container style={{display:'flex', justifyContent:'center'}}>
           
             
               <Grid className={classes.packItem} >

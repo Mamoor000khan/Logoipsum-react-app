@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
          height:'60xp',
           marginBottom:'135px',
            marginTop: '12px',
-           marginLeft: "35px",
+           marginLeft: "668px",
           textAlign:'centre',
       },
   link: {
