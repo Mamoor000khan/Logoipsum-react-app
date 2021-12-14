@@ -9,7 +9,7 @@ import Pricing from './components/pricing/pricing';
 function App() {
   // some changes 
   return (
-    <div className="App" style={{backgroundColor:'#F2F2F2'}}>
+    <div >
       <Header />
 
        <Features /> 

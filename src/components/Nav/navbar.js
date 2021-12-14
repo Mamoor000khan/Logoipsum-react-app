@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
          width:'1120px',
          height:'60xp',
           marginBottom:'135px',
-          marginTop: '12px',
+           marginTop: '12px',
            marginLeft: "35px",
           textAlign:'centre',
       },
