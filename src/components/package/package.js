@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Link } from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Img from '../../assets/img/package.png';
@@ -23,9 +24,9 @@ export default function Package() {
                     Getting data has naver been easier </p>
                </Typography>
            
-               <Typography style={{height: '173px', fontSize: '15px', color: '#5454D4'}}
+               <Link style={{height: '173px', fontSize: '15px', color: '#5454D4'}}
                     >learn more
-               </Typography>
+               </Link>
             </div>
 
             <div style={{width:'346px', height:'474px',  marginLeft:'613px', marginTop:'-535px'}}>

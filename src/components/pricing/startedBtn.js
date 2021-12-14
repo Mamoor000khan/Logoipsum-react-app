@@ -18,7 +18,7 @@ const useStyles = makeStyles({
         backfaceVisibility: 'hidden',
         boxShadow: 'none',
         // position: 'fixed',
-        marginLeft: '0px',
+        marginLeft: '-13px',
         marginTop: '3px',
         
 

@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     display:'flex',
     /* flex-direction: column; */
     alignItems:'space-between',
-    marginTop:'160px'
+    // marginTop:'160px'
  },
  heading: {
     width:'383px',

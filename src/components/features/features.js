@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Link } from '@material-ui/core';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Img from '../../assets/img/feature.png';
@@ -23,7 +24,7 @@ export default function Package() {
                 <p style={{width:'375px', color:'#696871', lineHeight:'29px'}}>A daily dataset to keep you up to date on subscription market trends and what's hapenning in your vertical.</p>
           </Typography>
            
-          <Typography style={{height: '173px', fontSize: '15px', color: '#5454D4'}}>learn more</Typography>
+          <Link style={{height: '173px', fontSize: '15px', color: '#5454D4'}}>learn more</Link>
 
            </div>
       </Container>

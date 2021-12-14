@@ -7,11 +7,11 @@ import Navbar from '../Nav/navbar';
 
 function header () {
     return (
-        <div style={{backgroundColor:'#F2F2F2'}}>
+        <div >
           <Navbar/>
 
           <Headertop/>
-          
+
           <Headerbottom/>
           
         </div>

@@ -9,7 +9,7 @@ import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width:'1211px',
+    // width:'1211px',
   },
 
   packItem: {
@@ -52,37 +52,34 @@ export default function SpacingGrid() {
           
             
               <Grid className={classes.packItem} >
-                  <Grid ><p style={{marginTop:'44px'}}>starter</p></Grid>
-                  <Grid><b style={{fontSize:'38px'}}><p>Free</p></b></Grid>
-                   <Grid>     <p>1 Website</p></Grid>
-                   <Grid>  <p>5 Gb Hosting</p></Grid>
-                   <Grid> <p>Limited Support</p></Grid>
-                   <Grid>  <StartedBtn/></Grid>
+                  <Typography style={{marginTop:'44px', marginLeft:'60px'}}>starter</Typography>
+                  <Typography><b style={{fontSize:'38px', marginLeft:'47px'}}>Free</b></Typography>
+                  <Typography style={{marginLeft:'44px'}}>1 Website</Typography>
+                  <Typography style={{marginLeft:'37px'}}>5 Gb Hosting</Typography>
+                  <Typography style={{marginLeft:'28px'}}>Limited Support</Typography>
+                    <StartedBtn />
               </Grid>
               
                              
             
               <Grid className={classes.packItem} >
-                  <Grid ><p style={{marginTop:'44px'}}>starter</p></Grid>
-                  <Grid><b style={{fontSize:'38px'}}><p>Free</p></b></Grid>
-                   <Grid><p>1 Website</p></Grid>
-                   <Grid><p>5 Gb Hosting</p></Grid>
-                   <Grid><p>Limited Support</p></Grid>
-                   <Grid><StartedBtn/></Grid>
+                  <Typography style={{marginTop:'44px', marginLeft:'51px'}}>Premium</Typography>
+                  <Typography><b style={{fontSize:'38px'}}>$29/month</b></Typography>
+                  <Typography style={{marginLeft:'44px'}}>10 Website</Typography>
+                  <Typography style={{marginLeft:'37px'}}>15 Gb Hosting</Typography>
+                  <Typography style={{marginLeft:'28px'}}>Premium Support</Typography>
+                    <StartedBtn />
               </Grid>
              
 
-            <Grid><Paper>
-              <Typography className={classes.packItem} >
-                  <Grid ><Paper><p>starter</p></Paper></Grid>
-                  <Grid><Paper><b style={{fontSize:'38px'}}><p>Free</p></b></Paper></Grid>
-                   <Grid>   <Paper>   <p>1 Website</p></Paper></Grid>
-                   <Grid><Paper>  <p>5 Gb Hosting</p></Paper></Grid>
-                   <Grid> <Paper><p>Limited Support</p></Paper></Grid>
-                   <Grid> <Paper> <StartedBtn/></Paper></Grid>
-              </Typography>
-              </Paper>
-            </Grid>
+              <Grid className={classes.packItem} >
+                  <Typography style={{marginTop:'44px', marginLeft:'46px'}}>Enterprice</Typography>
+                  <Typography><b style={{fontSize:'38px'}}>$49/month</b></Typography>
+                  <Typography style={{marginLeft:'25px'}}>Unlimited Website</Typography>
+                  <Typography style={{marginLeft:'37px'}}>50 Gb Hosting</Typography>
+                  <Typography style={{marginLeft:'28px'}}>Premium Support</Typography>
+                    <StartedBtn/>
+              </Grid>
 
             </Grid>
       </Grid>
