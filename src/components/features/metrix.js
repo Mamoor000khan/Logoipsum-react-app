@@ -7,12 +7,12 @@ import Img from '../../assets/img/package.png';
 
 const useStyles = makeStyles((theme) => ({
     metrix:{
-      marginTop:'46px',
-      marginBottom:'20px',
+    //   marginTop:'46px',
+    //   marginBottom:'20px',
     },
     container: {
       width:'1251px',
-      height:'698px',
+      height:'500px',
       display:'flex',
       justifyContent:'space-around',
       alignItems:'center',
