@@ -1,30 +1,28 @@
 import React from 'react';
+
 import { makeStyles } from '@material-ui/core/styles';
-
-import Grid from '@material-ui/core/Grid';
-import { Container, Link } from '@material-ui/core';
-
 import Logo from '../../assets/img/navbarlogo.png';
 import Button from './getStartedButton';
+import NavLinks from './navLinks';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     
-         width:'1120px',
+         width:'1220px',
          height:'60xp',
-          marginBottom:'135px',
-           marginTop: '12px',
-           marginLeft: "668px",
-          textAlign:'centre',
-      },
+         display: 'flex',
+         margin: 'auto',
+         alignItems:'center',
+         justifyContent:'center',
+         marginBottom:'135px',
+        },
+  
   link: {
-            // flexGrow: 1,
-            fontSize: '17px',
-            textTransform: 'none',
-            color: '#696871',
-            margin: 'auto',
-            // marginLeft:'-54px',
-            marginTop:'17px',
+          fontSize: '17px',
+          textTransform: 'none',
+          color: '#696871',
+          margin: 'auto',
+          marginTop:'17px',
             
        '&:hover': {
                 borderBottom: '2px solid #5454D4',
@@ -33,51 +31,36 @@ const useStyles = makeStyles((theme) => ({
                 textDecoration: 'none',
                 fontWeight: 'bold',
                 
-            }
-           },
-           navLinks: {
+            },
+        },
+  navLinks: {
             marginTop: '19px',
         },
-}));
+
+  logo: {
+          width:'221px', 
+          height:'39.22px', 
+          margin:'auto',
+          marginRight:'189px',
+          justifyContent: 'center',
+        },
+        
+      }));
 
 export default function Navbar() {
   const classes = useStyles();
 
   return (
-    <Container className={classes.root}>
-      <Grid container spacing={1} >
-        <Grid item xs={4} md={4}> 
-           <img alt="" src={Logo} 
-                style={{width:'222px', height:'41px', margin:'auto',textAlign:'center', 
-                          marginTop:'10px' }}/>
-        </Grid>
+    <nav className={classes.root}>
+      <div > 
+           <img alt="" src={Logo} className={classes.logo}/>
+      </div>
         
-        <Grid item xs={4} md={4}>
-          <div className={classes.navLinks}>
-             <Link href="#" className={classes.link} style={{fontWeight: 'bold',
-                   marginTop:'17px', borderBottom:'2px solid #5454D4',color: 'black',}}
-                   >Home
-             </Link>
-            
-            <Link href="#" className={classes.link} style={{marginLeft:'40px'}}
-                   >Feature
-            </Link>
-            
-            <Link href="#" className={classes.link} style={{marginLeft:'40px'}}
-                   >Pricing
-            </Link>
-            
-            <Link href="#" className={classes.link} style={{marginLeft:'40px'}}
-                   >Blog
-            </Link>
-          </div>
-        </Grid>
+          <NavLinks/>
         
-        <Grid item xs={4} md={4}>
-            <Button/>
-        </Grid>
-      </Grid>
-    </Container>
+               <Button/>
+      
+    </nav>
   );
 }
 

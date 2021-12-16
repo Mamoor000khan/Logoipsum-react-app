@@ -1,92 +1,92 @@
 import React from 'react';
 
-import { Link } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
-import Container from '@material-ui/core/Container';
-import Img from '../../assets/img/package.png';
- import PackagePlans from './packageplans';
+import Grid from '@material-ui/core/Grid';
 
+import Card from '../../assets/img/card.png';
+import Calc from '../../assets/img/calc.png';
+import Cam from '../../assets/img/cam.png';
+
+
+const useStyles = makeStyles((theme) => ({
+    Package:{
+      display:'flex',
+      justifyContent:'centre',
+      textAlign:'centre',
+      width:'1026px',
+      height:'2300px',
+    },
+    
+    img:{
+      width:'151px',
+      height:'97px',
+    },
+
+    heading:{
+      width:'500px',
+      height:'53px',
+      color:'#19191B',
+      fontFamily:'DM Sans',
+      fontWeight:700,
+      fontSize:'28px',
+    },
+
+    text:{
+      
+      width:'500px', 
+    height: '48px',
+    fontFamily:'Mulish',
+    color:'#696871',
+    fontSize: '24px',
+    fontWeight: 200,
+    lineHeight: '30px',
+    textTransform: 'none',
+    marginBottom:'21px',
+
+    }
+
+}));
 
 export default function Package() {
-  return (
-    <React.Fragment>
-      <Container style={{width:'1151px', height:'636px', marginTop:'100px', 
-                         }}>
-            
-            <div>
-               <Typography style={{width:'556px', height:'57px', marginBottom:'38px'}}>
-                  <b style={{fontSize:'50px'}}>In-depth metrics </b>
-               </Typography>
-
-               <Typography style={{width:'459px', height:'60px', marginBottom:'18px'}}>
-                  <p style={{width:'340px', color:'#696871', lineHeight:'28px'}}
-                    >Accurate real time reporting at your fingerprint. 
-                    Getting data has naver been easier </p>
-               </Typography>
-           
-               <Link style={{height: '173px', fontSize: '15px', color: '#5454D4'}}
-                    >learn more
-               </Link>
-            </div>
-
-            <div style={{width:'346px', height:'474px',  marginLeft:'613px', marginTop:'-535px'}}>
-                <img src={Img} alt="" style={{width:'348px'}}/>
-            </div>
-            <PackagePlans />
-       </Container>
-       
-    </React.Fragment>
-  )
+  const classes = useStyles();
+    
+      return (
+        <section className={classes.package}>
+            {/* CARD */}
+          <Grid  >
+              <img alt='' src={Card} className={classes.img}/>
+            <Typography className={classes.heading}>
+              Benchmarks
+              
+            </Typography>    
+            <Typography className={classes.text}>
+                See how you stack up against comporable compnies in similar stages
+            </Typography>
+           </Grid>
+        {/* CALCULATOR */}
+          <Grid >
+              <img alt='' src={Calc} className={classes.img}/>
+            <Typography className={classes.heading}>
+               Pricing Audit
+            </Typography>
+            <Typography className={classes.text}>
+                 Benchmark the health of your monetization and pricing strategy.
+            </Typography>
+           </Grid>
+        {/* CAMERA */}
+           <Grid >
+                <img alt='' src={Cam} className={classes.img}/>
+              <Typography className={classes.heading}>
+                 Retention Audit
+                  
+              </Typography>        
+              <Typography className={classes.text}>
+                  Audit where revenue leakage exists and where you can increase 
+                  retention.
+              </Typography>
+            </Grid>
+      </section>
+    );
+  
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import React from 'react';
-// import Typography from '@material-ui/core/Typography';
-
-// import content from '../../assets/img/Content Image (1).png';
-// import classes from './package.module.css';
-// import PackagePlans from './packageplans';
-
-// function Package () {
-//     return (
-//          <div className={classes.container}>
-//              <div className={classes.textContainer}>
-//                 <Typography style={{fontSize:'40px', height: '84px',     margintop: '139px',
-//     marginbottom: '-248px',}}>
-//                   <b> In-depth metrics </b>
-//                 </Typography>
- 
-//                 <Typography style={{fontSize:'14px', height:'72px', lineHeight:'22px', color: '#696871', width: '304px'}}>
-//                    Accurate real time reporting at your fingerprint. Getting data has naver been easier 
-//                 </Typography>
-
-//                 <Typography style={{height: '173px', fontSize: '15px', color: '#5454D4'}}>learn more</Typography>
-//               </div>
-//                   <div>
-//                     <img src={content} className={classes.img}/>
-//                   </div>
-//               <div>
-//                   <PackagePlans/>
-//                   </div>
-//           </div>
-//          )
-//        }
-
-
-
-
-//        export default Package;

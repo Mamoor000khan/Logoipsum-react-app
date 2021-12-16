@@ -2,8 +2,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 
-import Paper from '@material-ui/core/Paper';
-
 import StartedBtn from './startedBtn';
 import { Typography } from '@material-ui/core';
 
@@ -64,7 +62,7 @@ export default function SpacingGrid() {
             
               <Grid className={classes.packItem} >
                   <Typography style={{marginTop:'44px', marginLeft:'51px'}}>Premium</Typography>
-                  <Typography><b style={{fontSize:'38px'}}>$29/month</b></Typography>
+                  <Typography>$29/<p>month</p></Typography>
                   <Typography style={{marginLeft:'44px'}}>10 Website</Typography>
                   <Typography style={{marginLeft:'37px'}}>15 Gb Hosting</Typography>
                   <Typography style={{marginLeft:'28px'}}>Premium Support</Typography>
