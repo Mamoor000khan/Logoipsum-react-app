@@ -9,11 +9,13 @@ const useStyles = makeStyles((theme) => {
             '&:hover': {
                 textDecoration: 'none',
                 borderBottom: '2px solid #5454D4',
-                fontWeight: 'bold',
+                // fontWeight: 'bold',
                 color: '#19191B'
             }
         },
         navLinks: {
+            // width:'61px',
+            // height:'20px',
             marginRight: '208px',
         },
         

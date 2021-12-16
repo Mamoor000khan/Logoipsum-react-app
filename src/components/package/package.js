@@ -10,20 +10,25 @@ import Cam from '../../assets/img/cam.png';
 
 
 const useStyles = makeStyles((theme) => ({
-    Package:{
+  package:{
+    width:'100%',
+    height:'350px',
+    textAlign:'start',
+    marginTop:'60px',
+  },  
+  
+  packageContainer:{
       display:'flex',
       justifyContent:'centre',
       textAlign:'centre',
-      width:'1026px',
-      height:'2300px',
-    },
-    
-    img:{
+  },
+  
+  img:{
       width:'151px',
       height:'97px',
     },
 
-    heading:{
+  heading:{
       width:'500px',
       height:'53px',
       color:'#19191B',
@@ -53,6 +58,7 @@ export default function Package() {
     
       return (
         <section className={classes.package}>
+          <div className={classes.packageContainer}>
             {/* CARD */}
           <Grid  >
               <img alt='' src={Card} className={classes.img}/>
@@ -86,6 +92,7 @@ export default function Package() {
                   retention.
               </Typography>
             </Grid>
+            </div>
       </section>
     );
   

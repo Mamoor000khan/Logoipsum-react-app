@@ -17,27 +17,7 @@ const useStyles = makeStyles((theme) => ({
          marginBottom:'135px',
         },
   
-  link: {
-          fontSize: '17px',
-          textTransform: 'none',
-          color: '#696871',
-          margin: 'auto',
-          marginTop:'17px',
-            
-       '&:hover': {
-                borderBottom: '2px solid #5454D4',
-                color: 'black',
-                lineHeight: 'inherit',
-                textDecoration: 'none',
-                fontWeight: 'bold',
-                
-            },
-        },
-  navLinks: {
-            marginTop: '19px',
-        },
-
-  logo: {
+logo: {
           width:'221px', 
           height:'39.22px', 
           margin:'auto',
