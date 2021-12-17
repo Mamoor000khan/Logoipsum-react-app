@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   
 logo: {
           width:'221px', 
-          height:'39.22px', 
+          height:'46.22px', 
           margin:'auto',
           marginRight:'189px',
           justifyContent: 'center',

@@ -7,7 +7,7 @@ import Img from '../../assets/img/feature.png';
 
 const useStyles = makeStyles((theme) => ({
   subscription:{
-     marginTop:'10px',
+    //  marginTop:'10px',
     // marginBottom:'20px',
   },
   container: {

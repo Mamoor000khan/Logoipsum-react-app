@@ -11,14 +11,17 @@ import Cam from '../../assets/img/cam.png';
 
 const useStyles = makeStyles((theme) => ({
   package:{
-    width:'100%',
-    height:'350px',
-    textAlign:'start',
-    marginTop:'60px',
+    width:'2500px',
+    height:'300px',
+
+    //textAlign:'start',
+    marginTop:'130px',
   },  
   
-  packageContainer:{
+  Container:{
+    
       display:'flex',
+      margin:'auto',
       justifyContent:'centre',
       textAlign:'centre',
   },
@@ -58,9 +61,9 @@ export default function Package() {
     
       return (
         <section className={classes.package}>
-          <div className={classes.packageContainer}>
+          <div className={classes.Container}>
             {/* CARD */}
-          <Grid  >
+          <Grid>
               <img alt='' src={Card} className={classes.img}/>
             <Typography className={classes.heading}>
               Benchmarks
