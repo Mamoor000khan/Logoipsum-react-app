@@ -6,83 +6,103 @@ import StartedBtn from './startedBtn';
 import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    // width:'1211px',
-  },
 
-  packItem: {
+  root:{
+     width:'1024px',
+     height:'2000px',
+  },
+  container:{
+      display:'flex',
+      justifyContent:'center',
+      alignItems:'center',
+  },
+packItem: {
             width:'330px',
-            display: 'grid',
-            justifyContent:'center',
-            height:'441px',
-            // borderRadius:'10px',
-            // marginLeft:'100px',
-            fontSize:'13px',
-            // lineHight:'45px',
-            color:'#696871',
-            color:'#1D293F',
+            height:'405px',
             
-        '&:hover':{
+      '&:hover':{
                 backgroundColor:'#FF7143',
                 color:'#fff',
                 // height:'380px',
                 borderRadius: '15px 15px 15px 15px',
+                transition:'all .3s',
             },
          },
-    
-  paper: {
-    height: 441,
-    width: 330,
-  },
+   heading:{
+     width:'118px',
+     height:'28px',
+     color:'#696871',
+     fontFamily:'DM Sans',
+     fontWeight:200,
+    fontSize:'16px',
+    marginTop:'48px',
+    marginLeft:'116px',
+    // position:'absolute',
   
+   },   
+             
+  bold: {
+    width:'125px',
+    height:'56px',
+    fontFamily:'DM Sans',
+    fontWeight:700,
+    color:'#1D293F',
+    fontSize:'38px', 
+    marginLeft:'100px',
+    // marginLeft:'47px'
+  },
+  text:{
+    width:'118px',
+    height:'150px',
+     color:'#696871',
+     fontFamily:'Mulish',
+     fontWeight:200,
+     fontSize:'16px',
+     marginLeft:'104px',
+     lineHeight:'30PX',
+  },     
 }));
 
 export default function SpacingGrid() {
- 
-   const classes = useStyles();
+ const classes = useStyles();
 
- 
+ return (
+    <section className={classes.root}>
+        <Grid className={classes.container}>
+           <Grid className={classes.packItem} >
+                  <Typography className={classes.heading}>starter</Typography>
+                  <Typography className={classes.bold}>Free</Typography>
+                  <Typography className={classes.text}><p>1 Website</p>
+                  <p style={{marginLeft:'-9px'}}>5 Gb Hosting</p>
+                  <p style={{marginLeft:'-16px'}}>Limited Support</p></Typography>
+                    <StartedBtn style={{marginTop:'7px'}}/>
+              </Grid>
 
-  return (
-    <Grid container className={classes.root} spacing={2}>
-      <Grid item xs={12} md={12}>
-        <Grid container style={{display:'flex', justifyContent:'center'}}>
-          
-            
               <Grid className={classes.packItem} >
-                  <Typography style={{marginTop:'44px', marginLeft:'60px'}}>starter</Typography>
-                  <Typography><b style={{fontSize:'38px', marginLeft:'47px'}}>Free</b></Typography>
-                  <Typography style={{marginLeft:'44px'}}>1 Website</Typography>
-                  <Typography style={{marginLeft:'37px'}}>5 Gb Hosting</Typography>
-                  <Typography style={{marginLeft:'28px'}}>Limited Support</Typography>
+                  <Typography className={classes.heading}>Premium</Typography>
+                  <Typography className={classes.bold} style={{marginLeft:'64px'}}>$29
+                  <span style={{fontSize:'25px'}}>/month</span>
+                  </Typography>
+                  <Typography className={classes.text}><p>10 Website</p>
+                  <p style={{marginLeft:'-9px'}}>15 Gb Hosting</p>
+                  <p style={{marginLeft:'-16px'}}>Premium Support</p></Typography>
                     <StartedBtn />
               </Grid>
-              
-                             
-            
-              <Grid className={classes.packItem} >
-                  <Typography style={{marginTop:'44px', marginLeft:'51px'}}>Premium</Typography>
-                  <Typography><b style={{fontSize:'38px'}}>$29/month</b></Typography>
-                  <Typography style={{marginLeft:'44px'}}>10 Website</Typography>
-                  <Typography style={{marginLeft:'37px'}}>15 Gb Hosting</Typography>
-                  <Typography style={{marginLeft:'28px'}}>Premium Support</Typography>
-                    <StartedBtn />
-              </Grid>
-             
 
               <Grid className={classes.packItem} >
-                  <Typography style={{marginTop:'44px', marginLeft:'46px'}}>Enterprice</Typography>
-                  <Typography><b style={{fontSize:'38px'}}>$49/month</b></Typography>
-                  <Typography style={{marginLeft:'25px'}}>Unlimited Website</Typography>
-                  <Typography style={{marginLeft:'37px'}}>50 Gb Hosting</Typography>
-                  <Typography style={{marginLeft:'28px'}}>Premium Support</Typography>
-                    <StartedBtn/>
-              </Grid>
-
-            </Grid>
-      </Grid>
+                  <Typography className={classes.heading}>Enterprice</Typography>
+                  <Typography className={classes.bold} style={{marginLeft:'78px'}}>$49
+                  <span style={{fontSize:'25px'}}>/month</span>
+                  </Typography>
+                  <Typography className={classes.text} style={{fontSize:'14px'}}><p>Unlimited Website</p>
+                  <p style={{marginLeft:'11px'}}>50 Gb Hosting</p>
+                  <p style={{marginLeft:'3px'}}>Premium Support</p></Typography>
+                    <StartedBtn style={{marginLeft:'46px'}}/>
+              </Grid>    
+          </Grid>
+      </section>
       
-    </Grid>
+    
   );
 }
 

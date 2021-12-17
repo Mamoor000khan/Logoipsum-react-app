@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 200,
     lineHeight: '30px',
     textTransform: 'none',
-    marginBottom:'21px',
+    // marginBottom:'21px',
   },
   
   link:{

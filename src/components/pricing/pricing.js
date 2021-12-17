@@ -18,6 +18,7 @@ subscribeContainer: {
    display:'flex',
    justifyContent:'space-between',
    backgroundColor:'#F7F7FB',
+   marginBottom:'60px',
   },
 
 textContainer: {

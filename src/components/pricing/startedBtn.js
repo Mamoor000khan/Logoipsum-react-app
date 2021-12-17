@@ -5,11 +5,12 @@ import { makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles({
     btn: {
-        width: '211.83px',
-        height: '45px',
+        width: '235px',
+        height: '48px',
         color: '#5454D4',
+        marginLeft:'29px',
         background: 'transparent',
-        fontSize: '12px',
+        fontSize: '14px',
         // fontWeight: '211x',
         lineHeight: '25px',
         borderRadius: '10px',
@@ -17,8 +18,6 @@ const useStyles = makeStyles({
         transition: 'all .3s',
         backfaceVisibility: 'hidden',
         boxShadow: 'none',
-        // position: 'fixed',
-        marginLeft: '-13px',
         marginTop: '3px',
         
 
@@ -26,6 +25,8 @@ const useStyles = makeStyles({
             backgroundColor: '#9F3919',
             boxShadow: 'black',
             color: '#fff',
+            transition:'all .3s',
+       
         }
     }
 })

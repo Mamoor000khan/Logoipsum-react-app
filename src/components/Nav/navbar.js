@@ -14,7 +14,8 @@ const useStyles = makeStyles((theme) => ({
          margin: 'auto',
          alignItems:'center',
          justifyContent:'center',
-         marginBottom:'135px',
+         marginBottom:'170px',
+         marginTop:'20px'
         },
   
 logo: {

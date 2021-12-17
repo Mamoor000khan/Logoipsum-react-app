@@ -11,7 +11,7 @@ import Pricing from './components/pricing/pricing';
 function App() {
   // some changes 
   return (
-    <div >
+    <div>
       <Navbar/>
 
       <Header />
