@@ -2,8 +2,8 @@ import React from 'react';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Logo from '../../assets/img/navbarlogo.png';
-import Button from './getStartedButton';
-import NavLinks from './navLinks';
+import Button from './StartedButton';
+import NavLinks from './NavLinks';
 
 const useStyles = makeStyles((theme) => ({
   root: {

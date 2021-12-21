@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 
 import Img from '../../assets/img/header.png';
-import GetHeaderBtn from './getHeaderBtn.js';
+import GetHeaderBtn from './HeaderBtn.js';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 
 const useStyles = makeStyles((theme) => ({
@@ -19,24 +19,24 @@ const useStyles = makeStyles((theme) => ({
   },
 
   heading:{
-    width:'435px', 
-    height: '200px',
+    width:'437px', 
+    height: '231px',
     fontFamily:'DM Sans',
-    color:'19191B',
-    fontSize: '70px',
-    fontWeight: 500,
-    lineHeight: '64px',
+    color:'#19191B',
+    fontSize: '80px',
+    fontWeight: 100,
+    lineHeight: '77px',
     textTransform: 'none',
-    // marginTop:'80px',
+     marginBottom:'38px',
   },
 
   text: {
     width:'459px', 
     height: '90px',
     fontFamily:'Mulish',
-    color:'696871',
-    fontSize: '19px',
-    fontWeight: 400,
+    color:'#696871',
+    fontSize: '20px',
+    fontWeight: 800,
     lineHeight: '30px',
     textTransform: 'none',
   },

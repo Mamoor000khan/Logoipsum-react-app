@@ -8,7 +8,9 @@ const useStyles = makeStyles({
         width: '211px',
         height: '60px',
         color: '#fff',
-        background: '#5454D4',
+        background: '#FF7143',
+        fontFamily:'DM Sans',
+        fontWeight:'700',
         fontSize: '15px',
         // fontWeight: '211x',
         lineHeight: '25px',
@@ -18,18 +20,18 @@ const useStyles = makeStyles({
         backfaceVisibility: 'hidden',
         boxShadow: 'none',
         // position: 'fixed',
-        // marginLeft: '55px',
-        marginTop: '36px',
+        //  marginLeft: '100px',
+         marginTop:'8px',
         
 
         '&:hover': {
-            backgroundColor: '#FF7143',
+            backgroundColor: '#5454D4',
             boxShadow: 'black'
         }
     }
 })
 
-function GetHeaderBtn () {
+function GetStartedBtn () {
     const classes = useStyles();
     return (
         <Button variant="contained" className={classes.btn}>
@@ -39,4 +41,5 @@ function GetHeaderBtn () {
 }
 
 
-export default GetHeaderBtn;
+
+export default GetStartedBtn;

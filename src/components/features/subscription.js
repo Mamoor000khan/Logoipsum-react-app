@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 },
 textContainer: {
   width:'556px',
-  height:'220px',
+  height:'229px',
   textAlign:'start',
   // marginLeft:'168px',
 },
@@ -29,17 +29,18 @@ heading: {
   height:'57px',
   fontFamily:'DM Sans',
   fontWeight:700,
-  fontSize: '40px',
-  lineHeight: '50px',
+  fontSize: '50px',
+  lineHeight: '57px',
   marginBottom:'20px',
+  letterSpacing:'-2px',
 },
 text: {
   width:'459px', 
   height: '90px',
   fontFamily:'Mulish',
   color:'#696871',
-  fontSize: '19px',
-  fontWeight: 200,
+  fontSize: '20px',
+  fontWeight: 400,
   lineHeight: '30px',
   textTransform: 'none',
   marginBottom:'21px',
@@ -50,15 +51,15 @@ link:{
   height:'22px',
   fontFamily:'DM Sans',
   color: '#5454D4',
-  fontSize: '15px'
+  fontSize: '15px',
+  cursor:'pointer',
 }
 }))
 
 export default function Subscription() {
   const classes = useStyles();
   return (
-    <section className={classes.subscription}>
-    <div className={classes.container}>
+ <section className={classes.container}>
       <div>
      <img src={Img} alt="" style={{width:'348.5',height:'473px', }}/>
    </div>
@@ -75,8 +76,8 @@ export default function Subscription() {
       <Link className={classes.link}>Learn more</Link>
 
          </div>
-</div>
- </section>
+</section>
+ 
 );
 }
     

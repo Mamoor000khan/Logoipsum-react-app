@@ -8,7 +8,7 @@ const useStyles = makeStyles({
         width: '235px',
         height: '48px',
         color: '#5454D4',
-        marginLeft:'29px',
+        marginLeft:'48px',
         background: 'transparent',
         fontSize: '14px',
         // fontWeight: '211x',
@@ -18,7 +18,7 @@ const useStyles = makeStyles({
         transition: 'all .3s',
         backfaceVisibility: 'hidden',
         boxShadow: 'none',
-        marginTop: '3px',
+        marginTop: '37px',
         
 
         '&:hover': {
