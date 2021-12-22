@@ -12,10 +12,10 @@ const useStyles = makeStyles((theme) => ({
     width:'1151px',
     height:'636px',
     margin: 'auto',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'flex-start',
-        textAlign: 'start',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    textAlign: 'start',
   },
 
   heading:{
@@ -66,8 +66,6 @@ export default function Header() {
         <div>
           <img src={Img} alt="" style={{width:'610px', marginTop:'-50px'}}/>
         </div>
-      
-      
-      </header>
+     </header>
     );
   }

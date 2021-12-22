@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Navbar from './components/Nav/Navbar.js';
-import Header from './components/Header/Header.js';
-import Clients from './components/Clients/Clients.js';
-import Subscription from './components/Features/Subscription';
-import Metrix from './components/Features/Metrix';
-import Package from './components/Package/Package';
-import Pricing from './components/Pricing/Pricing';
+import Navbar from './components/Nav/navbar.js';
+import Header from './components/Header/header.js';
+import Clients from './components/clients/clients.js';
+import Subscription from './components/features/subscription';
+import Metrix from './components/features/metrix';
+import Package from './components/package/package';
+import Pricing from './components/pricing/pricing';
 
 function App() {
   // some changes 

@@ -3,7 +3,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Logo from '../../assets/img/navbarlogo.png';
 import Button from './StartedButton';
-import NavLinks from './NavLinks';
+import NavLinks from './navLinks';
 
 const useStyles = makeStyles((theme) => ({
   root: {
